@@ -1,7 +1,11 @@
 import Head from "next/head";
+// import Link from "next/link";
 
 // Custom Component
 import SignUp from "../components/SignUp";
+import Login from "../components/Login";
+import EmailVerification from "../components/EmailVerification";
+import Reminder from "../components/Reminder";
 
 export default function Home() {
   return (
@@ -11,13 +15,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center min-h-screen bg-[#171717]">
-        <h1 className="text-[#F8D49D]  text-3xl sm:text-4xl mb-14 ">Sign Up To Set Reminder !!</h1>
-        <SignUp />
-        <button className="bg-[#F8D49D] rounded-lg p-2 px-4">Sign Up</button>
-        <a href="" className="pt-4 text-gray-400 underline">
-          forgot password ?
-        </a>
+      <main className="min-h-screen bg-[#171717]">
+        {/* <SignUp /> */}
+        {/* <Login /> */}
+        <EmailVerification />
+        {/* <Reminder /> */}
       </main>
     </div>
   );
